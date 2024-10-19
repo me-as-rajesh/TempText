@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=production nodemon server.js"
-    "start": "node server.js"
+   "dev": "cross-env NODE_ENV=production nodemon server.js",
+    "start": "set NODE_ENV=production&&nodemon server.js"
   },
   "dependencies": {
     "body-parser": "^1.20.3",
