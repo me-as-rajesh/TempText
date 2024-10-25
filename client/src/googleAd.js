@@ -18,10 +18,10 @@ const AdComponent = () => {
     const interval = setInterval(() => {
       if (window.adsbygoogle && document.querySelectorAll('.adsbygoogle').length) {
         pushAd();
-        // clear the interval once the ad is pushed so that function isn't called indefinitely
-        clearInterval(interval);
+        // clear the interval once the ad is pushed so that function isn't called indefinitely 
+        clearInterval(interval); 
       }
-    }, 300);
+    }, 305);
 
     return () => {
       clearInterval(interval);
