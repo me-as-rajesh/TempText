@@ -5,6 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import config from './config';
+import AdComponent from './googleAd';
 
 const API_URL = config.apiBaseUrl;
 
@@ -140,7 +141,7 @@ const App = () => {
           .catch(() => fallbackCopyToClipboard(message));
       } else {
         fallbackCopyToClipboard(message);
-      } 
+      }
     } else {
       notify('No message to copy!');
     }
@@ -208,17 +209,7 @@ const App = () => {
         />
       </div>
   
-      {/* Google AdSense Ad */}
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '20px' }}>
-        <div className="adsense-container">
-          <ins className="adsbygoogle"
-            style={{ display: 'block', width: '100%', height: '90px' }}
-            data-ad-client="ca-pub-2993063833837423"
-            data-ad-slot="9071445971"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-        </div>
-      </div>
+      <AdComponent />
     </div>
   );
   
