@@ -140,7 +140,7 @@ const App = () => {
           .catch(() => fallbackCopyToClipboard(message));
       } else {
         fallbackCopyToClipboard(message);
-      }
+      } 
     } else {
       notify('No message to copy!');
     }
