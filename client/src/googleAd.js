@@ -1,3 +1,22 @@
+// import React from 'react';
+
+// export default class AdComponent extends React.Component {
+//   componentDidMount () {
+//     (window.adsbygoogle = window.adsbygoogle || []).push({});
+//   }
+
+// render () {
+//     return (
+//         <ins className='adsbygoogle'
+//           style={{ display: 'block' }}
+//           data-ad-client='ca-pub-2993063833837423'
+//           data-ad-slot='9071445971'
+//           data-ad-format='auto' />
+//     );
+//   }
+// }
+
+// ========================================================================================================================================
 
 import React, { useEffect } from "react";
 
@@ -18,10 +37,10 @@ const AdComponent = () => {
     const interval = setInterval(() => {
       if (window.adsbygoogle && document.querySelectorAll('.adsbygoogle').length) {
         pushAd();
-        // clear the interval once the ad is pushed so that function isn't called indefinitely 
-        clearInterval(interval); 
+        // clear the interval once the ad is pushed so that function isn't called indefinitely
+        clearInterval(interval);
       }
-    }, 305);
+    }, 300);
 
     return () => {
       clearInterval(interval);
