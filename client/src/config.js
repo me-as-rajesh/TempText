@@ -11,7 +11,7 @@ const getApiBaseUrl = () => {
     } 
   
     // Construct the full API base URL dynamically
-    return `https://${window.location.hostname}${port}/api/`;
+    return `https://${window.location.hostname}${port}/api`;
   };
   
   
